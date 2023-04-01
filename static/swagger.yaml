@@ -1,0 +1,36 @@
+swagger: "2.0"
+info:
+  title: "API untuk Cleansing Data"
+  version: "1.0"
+paths:
+  /api/clean_file:
+    post:
+      summary: "Clean a file"
+      consumes:
+        - "multipart/form-data"
+      parameters:
+        - name: "file"
+          in: "formData"
+          description: "CSV file yang akan dibersihkan"
+          required: true
+          type: "file"
+      responses:
+        200:
+          description: "File has been cleaned and saved as cleaned_file.csv"
+          
+  /api/clean_text:
+    post:
+      summary: "Clean a text"
+      consumes:
+        - "application/x-www-form-urlencoded"
+      parameters:
+        - name: "text"
+          in: "formData"
+          description: "Text yang akan dibersihkan"
+          required: true
+          type: "string"
+      responses:
+        200:
+          description: "Cleaned text"
+          schema:
+            type: "string"
