@@ -15,21 +15,29 @@ Kode ini juga mencakup konfigurasi untuk dokumentasi Swagger UI dan mengimpor pu
 ## **Instalasi**
 1. Clone repository ini.
 
-```git clone https://github.com/Cylborg/data-cleaning-binar``
+```
+git clone https://github.com/Cylborg/data-cleaning-binar
+```
 
 2. Install dependensi yang dibutuhkan
 
-```pip install pandas matplotlib flask flask_swagger_ui```
+```
+pip install pandas matplotlib flask flask_swagger_ui
+```
 
 3. Jalankan API app.py
 
-```python app.py```
+```
+python app.py
+```
 
 ## **Penggunaan**
 
 1. Setelah API berjalan, buka browser dan buka
 
-```http://127.0.0.1:5000/api/docs/#/default/post_api_clean_file```
+```
+http://127.0.0.1:5000/api/docs/#/default/post_api_clean_file
+```
 
 2. Untuk membersihkan file
     * Endpoint ini digunakan untuk membersihkan file CSV
@@ -45,7 +53,9 @@ Kode ini juga mencakup konfigurasi untuk dokumentasi Swagger UI dan mengimpor pu
    
 4. Untuk mendapatkan visualisasi dari data yang telah dibersihkan, jalankan EDA.py
 
-```python eda.py```
+```
+python eda.py
+```
 
 
 
