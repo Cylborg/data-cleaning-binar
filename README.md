@@ -11,8 +11,45 @@ Ada juga skrip python EDA.PY yang berfungsi untuk memberikan visualisasi pada da
 
 Kode ini juga mencakup konfigurasi untuk dokumentasi Swagger UI dan mengimpor pustaka-pustaka yang diperlukan seperti Flask, pandas, dan re, matplotlib, seaborn dan wordcloud.
 
+# **Petunjuk Penggunaan API**
+## **Instalasi**
+1. Clone repository ini.
 
-##**Tentang Dataset**
+```git clone https://github.com/Cylborg/data-cleaning-binar``
+
+2. Install dependensi yang dibutuhkan
+
+```pip install pandas matplotlib flask flask_swagger_ui```
+
+3. Jalankan API app.py
+
+```python app.py```
+
+## **Penggunaan**
+
+1. Setelah API berjalan, buka browser dan buka
+
+```http://127.0.0.1:5000/api/docs/#/default/post_api_clean_file```
+
+2. Untuk membersihkan file
+    * Endpoint ini digunakan untuk membersihkan file CSV
+    * pilih clean file 
+    * pilih Input file CSV yang akan dibersihkan.
+    * outputnya berupa file csv "cleaned_data.csv"
+    
+3. Untuk membersihkan text
+   * Endpoint ini digunakan untuk membersihkan teks.
+   * pilih clean text
+   * Input text: teks yang akan dibersihkan.
+   * Text yang telah dibersihkan akan muncul
+   
+4. Untuk mendapatkan visualisasi dari data yang telah dibersihkan, jalankan EDA.py
+
+```python eda.py```
+
+
+
+## **Tentang Dataset** 
 Penulis asli GitHub: https://github.com/okkyibrohim/id-multi-label-hate-speech-and-abusive-language-detection
 Saya mengunggahnya ke github karena saya menggunakannya untuk tugas Gold Challenge dari Binar saya di sini. Semua kredit diberikan kepada penulis asli.
 
